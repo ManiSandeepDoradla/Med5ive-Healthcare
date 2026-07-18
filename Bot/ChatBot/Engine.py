@@ -51,7 +51,50 @@ def _get_bot():
 # ===============================
 # MAIN ENTRY POINT (SAME FLOW AS YOUR FILE)
 # ===============================
- 
+#new starts from here
+def get_bot_response(user_text: str):
+
+    print("STEP 1")
+    text = user_text.strip()
+
+    print("STEP 2")
+
+    if is_greeting(text):
+        print("Greeting")
+        return greeting_response()
+
+    print("STEP 3")
+
+    if is_small_talk(text):
+        print("Small talk")
+        return small_talk_response()
+
+    print("STEP 4")
+
+    if is_off_topic(text):
+        print("Off topic")
+        return OFF_TOPIC_MESSAGE
+
+    print("STEP 5")
+
+    if has_red_flags(text):
+        print("Red flag")
+        return (
+            "🚨 Your symptoms may be urgent.\n"
+            "Please call emergency services (108)."
+        )
+
+    print("STEP 6")
+
+    group = detect_group(text)
+
+    print("Group =", group)
+
+    if group:
+        print("STEP 7")
+        severity = assess_group_severity(text, group)
+        print("Severity =", severity)
+# new ends here        
 def get_bot_response(user_text: str) -> str:
     """
     This function follows THE SAME ORDER
