@@ -1,0 +1,1 @@
+web: gunicorn turf_manage.wsgi:application

@@ -24,9 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^02^y7$b+&1=z9s6p0kma+3$xqv=%1q-50eab=7!e3f@80q$ht'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -44,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -62,7 +61,11 @@ MESSAGE_TAGS = {
 
 
 DEBUG = False  # For development only
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.1.39']  # Replace with your IP
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    ".onrender.com",
+]
 
 ROOT_URLCONF = 'turf_manage.urls'
 
@@ -87,13 +90,23 @@ WSGI_APPLICATION = 'turf_manage.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'healthcare',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Bhanu@145',
+#         'HOST': 'localhost',  
+#         'PORT': '5432',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'healthcare',
         'USER': 'postgres',
-        'PASSWORD': 'Bhanu@145',
-        'HOST': 'localhost',  
+        'PASSWORD': 'Mansando@123',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
@@ -133,11 +146,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS=[
+#     os.path.join(BASE_DIR,'static')
+# ]
+# STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'static')
+
+STATICFILES_DIRS = [
+    BASE_DIR / "assets"
 ]
-STATIC_ROOT=os.path.join(BASE_DIR,'assets')
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
