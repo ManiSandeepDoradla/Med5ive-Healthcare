@@ -1,0 +1,246 @@
+
+<!-- ✅ Add this CSS in your <head> or stylesheet -->
+<style>
+  .form-section { margin: 20px 0; }
+  .form-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .form-group { flex: 1; min-width: 240px; }
+
+  /* Toggle switch base */
+  .toggle-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .toggle {
+    --w: 56px;
+    --h: 28px;
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+  }
+  .toggle input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0; height: 0;
+    position: absolute;
+    opacity: 0;
+  }
+  .toggle-track {
+    position: absolute;
+    inset: 0;
+    background: #cfd8dc;
+    border-radius: var(--h);
+    transition: background .25s ease;
+  }
+  .toggle-thumb {
+    position: absolute;
+    top: 3px; left: 3px;
+    width: calc(var(--h) - 6px);
+    height: calc(var(--h) - 6px);
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    transition: transform .25s ease;
+  }
+  .toggle input:checked + .toggle-track {
+    background: #4caf50;
+  }
+  .toggle input:checked + .toggle-track + .toggle-thumb {
+    transform: translateX(calc(var(--w) - var(--h)));
+  }
+
+  /* Helper text */
+  .toggle-label {
+    font-weight: 600;
+    min-width: 140px;
+  }
+  .toggle-state {
+    font-size: 0.95rem;
+    color: #37474f;
+  }
+
+  /* Conditional section */
+  .hidden { display: none; }
+</style>
+
+<formppointment
+  <!-- Patient Information -->
+  <div class="form-section">
+    <h4>📋 Patient Information</h4>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="patientName">Full Name *</label>
+        <input type="text" id="patientName" name="patientName" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="patientEmail">Email Address *</label>
+        <input type="email" id="patientEmail" name="patientEmail" placeholder="Enter your email" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="patientPhone">Phone Number *</label>
+        <input type="tel" id="patientPhone" name="patientPhone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="patientAge">Age *</label>
+        <input type="number" id="patientAge" name="patientAge" placeholder="Enter your age" min="1" max="120" required>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Appointment Type (Toggle) -->
+  <div class="form-section">
+    <h4>📌 Appointment Type</h4>
+    <div class="toggle-wrap">
+      <span class="toggle-label">Online / Offline *</span>
+      <label class="toggle">
+        <input type="checkbox" id="appointmentTypeToggle" aria-label="Toggle appointment type">
+        <span class="toggle-track"></span>
+        <span class="toggle-thumb"></span>
+      </label>
+      <span id="appointmentTypeText" class="toggle-state">Online</span>
+    </div>
+    <!-- Hidden field actually submitted to backend -->
+    <input type="hidden" id="appointmentType" name="appointmentType" value="online" required>
+  </div>
+
+  <!-- 🚖 Service Cab Option (Toggle) -->
+  <div class="form-section hidden" id="cabSection">
+    <h4>🚖 Service Cab Option</h4>
+    <div class="toggle-wrap">
+      <span class="toggle-label">Need a cab?</span>
+      <label class="toggle">
+        <input type="checkbox" id="cabToggle" aria-label="Toggle cab service">
+        <span class="toggle-track"></span>
+        <span class="toggle-thumb"></span>
+      </label>
+      <span id="cabText" class="toggle-state">No</span>
+    </div>
+    <!-- Hidden field actually submitted to backend -->
+    <input type="hidden" id="cabService" name="cabService" value="No">
+  </div>
+
+  <!-- Appointment Date & Time -->
+  <div class="form-section">
+    <h4>📅 Appointment Date & Time</h4>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="appointmentDate">Preferred Date *</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Select Time Slot *</label>
+      <select id="timeSlot" name="timeSlot" required>
+        <option value="">Select time slot</option>
+        <option value="09:00 AM">09:00 AM</option>
+        <option value="09:30 AM">09:30 AM</option>
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="10:30 AM">10:30 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="11:30 AM">11:30 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="12:30 PM">12:30 PM</option>
+        <option value="01:00 PM">01:00 PM</option>
+        <option value="01:30 PM">01:30 PM</option>
+        <option value="02:00 PM">02:00 PM</option>
+        <option value="02:30 PM">02:30 PM</option>
+        <option value="03:00 PM">03:00 PM</option>
+        <option value="03:30 PM">03:30 PM</option>
+        <option value="04:00 PM">04:00 PM</option>
+        <option value="04:30 PM">04:30 PM</option>
+        <option value="05:00 PM">05:00 PM</option>
+        <option value="05:30 PM">05:30 PM</option>
+        <option value="06:00 PM">06:00 PM</option>
+        <option value="06:30 PM">06:30 PM</option>
+        <option value="07:00 PM">07:00 PM</option>
+        <option value="07:30 PM">07:30 PM</option>
+        <option value="08:00 PM">08:00 PM</option>
+        <option value="08:30 PM">08:30 PM</option>
+        <option value="09:00 PM">09:00 PM</option>
+      </select>
+      <input type="hidden" id="selectedTime" name="selectedTime" required>
+    </div>
+  </div>
+
+  <!-- Reason for Visit -->
+  <div class="form-section">
+    <h4>📝 Reason for Visit</h4>
+    <div class="form-group">
+      <label for="visitReason">Describe your symptoms or reason for consultation</label>
+      <textarea id="visitReason" name="visitReason" placeholder="Please describe your symptoms or reason for visit..."></textarea>
+    </div>
+  </div>
+
+  <!-- Form Actions -->
+  <div class="form-actions" style="display:flex; gap:12px;">
+    hcl-healthcare.htmlCancel</button>
+    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+  </div>
+</form>
+
+<!-- ✅ Add this JS at the end of body -->
+<script>
+  const appointmentTypeToggle = document.getElementById('appointmentTypeToggle');
+  const appointmentTypeText   = document.getElementById('appointmentTypeText');
+  const appointmentTypeHidden = document.getElementById('appointmentType');
+
+  const cabSection = document.getElementById('cabSection');
+  const cabToggle  = document.getElementById('cabToggle');
+  const cabText    = document.getElementById('cabText');
+  const cabHidden  = document.getElementById('cabService');
+
+  const timeSlot = document.getElementById('timeSlot');
+  const selectedTime = document.getElementById('selectedTime');
+
+  // Initialize states
+  function initStates() {
+    // Appointment type default: Online
+    appointmentTypeToggle.checked = false;
+    appointmentTypeText.textContent = 'Online';
+    appointmentTypeHidden.value = 'online';
+    cabSection.classList.add('hidden');
+
+    // Cab default: No
+    cabToggle.checked = false;
+    cabText.textContent = 'No';
+    cabHidden.value = 'No';
+  }
+  initStates();
+
+  // Toggle: Appointment Type (unchecked=Online, checked=Offline)
+  appointmentTypeToggle.addEventListener('change', () => {
+    const isOffline = appointmentTypeToggle.checked;
+    appointmentTypeText.textContent = isOffline ? 'Offline' : 'Online';
+    appointmentTypeHidden.value = isOffline ? 'offline' : 'online';
+
+    // Show cab section only for Offline
+    cabSection.classList.toggle('hidden', !isOffline);
+
+    // Reset cab toggle if switching back to Online
+    if (!isOffline) {
+      cabToggle.checked = false;
+      cabText.textContent = 'No';
+      cabHidden.value = 'No';
+    }
+  });
+
+  // Toggle: Cab Service (unchecked=No, checked=Yes)
+  cabToggle.addEventListener('change', () => {
+    const needCab = cabToggle.checked;
+    cabText.textContent = needCab ? 'Yes' : 'No';
+    cabHidden.value = needCab ? 'Yes' : 'No';
+  });
+
+  // Keep hidden selectedTime in sync
+  timeSlot.addEventListener('change', () => {
+    selectedTime.value = timeSlot.value;
+  });
+
+  // Optional: On submit, ensure hidden selectedTime is set
+  document.getElementById('bookingForm').addEventListener('submit', (e) => {
+    if (!selectedTime.value) selectedTime.value = timeSlot.value || '';
+  });
+</script>
+``

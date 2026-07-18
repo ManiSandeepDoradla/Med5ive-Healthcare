@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="605">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCL Health Care - Book Your Appointment Today</title>
+    <meta name="description" content="Book appointments with experienced healthcare professionals at HCL Health Care">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #2a333d;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+ 
+        /* Header */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e8eef3;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(34, 150, 182, 0.08);
+        }
+ 
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #6376db;
+        }
+       
+ 
+        .logo-icon {
+            width: 160px;
+            height: 40px;
+            background: linear-gradient(135deg, #b5179e 0%, #9a37b2 25%, #7e56c6 50%,#6376db 75%,#4895ef 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+ 
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+ 
+        nav a {
+            text-decoration: none;
+            color: #2a333d;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+ 
+        nav a:hover {
+            color: #6376db;
+        }
+ 
+        .btn {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+ 
+        .btn-primary {
+            background: #4895ef;
+            color: white;
+        }
+ 
+        .btn-primary:hover {
+            background: #9a37b2;
+        }
+ 
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+ 
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+ 
+        .btn-large {
+            padding: 14px 32px;
+            font-size: 1rem;
+        }
+ 
+        /* Welcome Section */
+        .welcome-section {
+            background: linear-gradient(135deg, #b5179e 0%, #9a37b2 25%, #7e56c6 50%,#6376db 75%,#4895ef 100%);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+ 
+        .welcome-section::before,
+        .welcome-section::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            filter: blur(60px);
+        }
+ 
+        .welcome-section::before {
+            width: 150px;
+            height: 150px;
+            top: 40px;
+            left: 40px;
+        }
+ 
+        .welcome-section::after {
+            width: 180px;
+            height: 180px;
+            bottom: 40px;
+            right: 40px;
+        }
+ 
+        .welcome-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+ 
+        .welcome-section h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+ 
+        .welcome-section p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+ 
+        .welcome-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+ 
+        /* Appointment Form Section */
+        .appointment-section {
+            padding: 80px 20px;
+            background: #f2fafd;
+        }
+ 
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+ 
+        .section-header h2 {
+            font-size: 2rem;
+            color: #2a333d;
+            margin-bottom: 10px;
+        }
+ 
+        .section-header p {
+            color: #6b7785;
+        }
+ 
+        .form-card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(34, 150, 182, 0.12);
+        }
+ 
+        .form-group {
+            margin-bottom: 24px;
+        }
+ 
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2a333d;
+        }
+ 
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e8eef3;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+ 
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2296b6;
+        }
+ 
+        .error-message {
+            color: #e74c3c;
+            font-size: 0.875rem;
+            margin-top: 5px;
+            display: none;
+        }
+ 
+        /* Doctors Section */
+        .doctors-section {
+            padding: 80px 20px;
+        }
+ 
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+ 
+        .doctor-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(34, 150, 182, 0.08);
+            transition: all 0.3s;
+        }
+ 
+        .doctor-card:hover {
+            box-shadow: 0 8px 32px rgba(34, 150, 182, 0.16);
+            transform: translateY(-5px);
+        }
+ 
+        .doctor-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+ 
+        .doctor-info {
+            padding: 24px;
+        }
+ 
+        .doctor-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            color: #2a333d;
+        }
+ 
+        .doctor-specialization {
+            color: #2296b6;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+ 
+        .doctor-description {
+            color: #6b7785;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+ 
+        .time-slots-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+ 
+        .time-slots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+ 
+        .time-slot {
+            background: #f0f7f9;
+            color: #2296b6;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+ 
+        /* Footer */
+        footer {
+            background: white;
+            border-top: 1px solid #e8eef3;
+            padding: 30px 20px;
+            text-align: center;
+        }
+ 
+        footer p {
+            color: #6b7785;
+            font-size: 0.9rem;
+        }
+ 
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2a333d;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 2000;
+            animation: slideIn 0.3s ease-out;
+        }
+ 
+        .toast.show {
+            display: block;
+        }
+ 
+        .toast.success {
+            background: #27ae60;
+        }
+ 
+        .toast.error {
+            background: #e74c3c;
+        }
+ 
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+ 
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+ 
+            .welcome-section h1 {
+                font-size: 2rem;
+            }
+ 
+            .welcome-section p {
+                font-size: 1rem;
+            }
+ 
+            .welcome-buttons {
+                flex-direction: column;
+            }
+ 
+            .form-card {
+                padding: 24px;
+            }
+ 
+            .doctors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .heroappsection {
+            padding: 12px 16px;
+            margin-left: 335px;
+            }
+
+            /* Horizontal row like mobile app launcher */
+            .apps-row {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;                 /* horizontal scroll */
+            padding-bottom: 6px;              /* room for shadow */
+            scroll-snap-type: x mandatory;    /* snap feel */
+            -webkit-overflow-scrolling: touch;
+            }
+
+            /* Hide ugly scrollbar on supported browsers (optional) */
+            .apps-row::-webkit-scrollbar {
+            height: 8px;
+            }
+            .apps-row::-webkit-scrollbar-thumb {
+            background: #e2e8f0;
+            border-radius: 999px;
+            }
+
+            /* App tile = mobile-icon style */
+            .app-tile {
+            scroll-snap-align: start;
+            width: 90px;                   /* fixed icon width */
+            height: 86px;
+            border: 0;
+            background:
+                radial-gradient(120px 80px at 20% 0%, rgba(255,255,255,0.6) 0%, transparent 60%),
+                linear-gradient(180deg, #eef2ff 0%, #e2e8f0 100%); /* soft gradient */
+            border-radius: 22px;              /* rounded-square like app icon */
+            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: transform 120ms ease, box-shadow 120ms ease;
+            }
+
+            /* Icon (emoji or replace with SVG/img) */
+            .app-icon {
+            font-size: 26px;
+            line-height: 1;
+            }
+
+            /* Label under icon */
+            .app-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #0f172a;                   /* slate-900 */
+            }
+
+            /* Interaction states */
+            .app-tile:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(129, 153, 207, 0.18);
+            }
+            .app-tile:active {
+            transform: translateY(0);
+            }
+    #chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+ 
+#chatbot-header {
+  background: #3091f9;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+ 
+#chatbot-body {
+  display: none;
+  background: white;
+  height: 350px;
+  border-radius: 0 0 10px 10px;
+}
+ 
+#chatbot-messages {
+  height: 280px;
+  overflow-y: auto;
+  padding: 10px;
+}
+ 
+#chatbot-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+ 
+#chatbot-input input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+ 
+#chatbot-input button {
+  background: #3091f9;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}            
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                        <div class="logo">
+            <h1>HCLTech HealthCare</h1>
+        </div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                {% if user.is_authenticated %}
+                
+                <form action="employee/logout">
+                <input type="submit" value="Logout" class="btn btn-primary">
+                </form>
+                {% else %}
+                <div style="display: flex; gap:10px;">
+                <form action="employee/register">
+                <input type="submit" value="Register" class="btn btn-primary">
+                </form>
+                <form action="employee/login">
+                <input type="submit" value="Login" class="btn btn-primary">
+                </form>
+                {% endif %}
+                </div>
+                
+            </div>
+        </div>
+    </header>
+ 
+<!-- Welcome Section -->
+    <section id="home" class="welcome-section">
+        <div class="welcome-content">
+            {% if user.is_authenticated %}
+            <h1>Welcome, <span id="userName">{{user.first_name}}</span>!</h1>
+            {% else %}
+            <h1>Welcome, <span id="userName">Guest</span>!</h1>
+            {% endif %}
+            <p>Your health is our priority. Book an appointment with our experienced healthcare professionals today.</p>
+           <!-- <div class="welcome-buttons">
+                <button class="btn btn-primary btn-large" onclick="scrollToSection('booking')">Book Appointment</button>
+                <button class="btn btn-secondary btn-large" onclick="scrollToSection('doctors')">View Doctors</button>
+            </div> -->
+        </div>
+        <section class="heroappsection" aria-label="Quick actions">
+        <div class="apps-row">
+            <form action="filter1" method="post">
+            {% csrf_token %}
+            <button class="app-tile">
+            <span class="app-icon">🩺</span>
+            <span class="app-label">Doctor</span>
+            </button type="submit">
+            </form>
+
+           <!-- <button class="app-tile">
+            <span class="app-icon">💊</span>
+            <span class="app-label">Pharmacy</span>
+            </button> -->
+
+            <form action="#lab-tests">
+            <button class="app-tile">
+            <span class="app-icon">🧪</span>
+            <span class="app-label">Lab Tests</span>
+            </button >
+            </form>
+
+        
+            <button class="app-tile" onclick="toggleChatbot()">
+            <span class="app-icon">🤖</span>
+            <span class="app-label">Chat Bot</span>
+            </button>
+
+            <form action="my_appointments" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="User_id" id="User_id" value="{{User.id}}">
+            <button class="app-tile">
+            <span class="app-icon">📅</span>
+            <span>Appointments</span>
+            </button type="submit">
+            </form>
+
+            <form action="filter2" method="post">
+            {% csrf_token %}
+            <button class="app-tile">
+            <span class="app-icon">🧘</span>
+            <span class="app-label">Wellness</span>
+            </button>
+            </form>
+
+          <!--  <button class="app-tile">
+            <span class="app-icon">🧾</span>
+            <span class="app-label">Insurance</span>
+            </button> -->
+
+          <!--  <button class="app-tile">
+            <span class="app-icon">📄</span>
+            <span class="app-label">Reports</span>
+            </button> -->
+        </div>
+        </section>
+    </section>
+ 
+    <!-- Appointment Form -->
+    <section id="booking" class="appointment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find & schedule a doctor visit</h2>
+                <!--<p>Fill in the details below to schedule your visit</p>-->
+            </div>
+ 
+            <div class="form-card">
+                <form id="appointmentForm" action="filter" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="specialization">Specialization</label>
+                        <select id="specialization" name="specialization" required>
+                            <option value="">Select specialization</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Pulmonology">Pulmonology</option>
+                            <option value="Gynaecology">Gynaecology</option>
+                            <option value="ENT">ENT</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="General Medicine">General Medicine</option>
+                        </select>
+                        <span class="error-message" id="specializationError">Please select a specialization</span>
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="date">Appointment Date</label>
+                        <input type="date" id="date" name="date" required>
+                        <span class="error-message" id="dateError">Please select a date</span>
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location" name="location" required>
+                            <option value="">Select location</option>
+                            <option value="HCLTech Sholinganallur">HCLTech Sholinganallur</option>
+                            <option value="HCLTech Bangalore">HCLTech Bangalore</option>
+                            <option value="HCLTech Hyderabad">HCLTech Hyderabad</option>
+                            <option value="HCLTech Gannavaram">HCLTech Gannavaram</option>
+                            <option value="HCLTech Madurai">HCLTech Madurai</option>
+                            <option value="HCLTech Coimbatore">HCLTech Coimbatore</option>
+                            <option value="HCLTech Maharastra">HCLTech Nagpur</option>
+                            <option value="HCLTech Uttarpradesh">HCLTech Lucknow</option>
+                            <option value="HCLTech Noida">HCLTech Noida</option>
+                            <option value="HCLTech Pune">HCLTech Pune</option>
+                        </select>
+                        <span class="error-message" id="locationError">Please select a location</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Filter</button>
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Expert Doctors</h2>
+                <p>Meet our team of experienced healthcare professionals</p>
+            </div>
+ 
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                {% for doctor in doctors %}
+                <div class="doctor-card">
+                    <img src= "{{ doctor.photo_url }}" alt="{{ doctor.name }}" class="doctor-image">
+                    <div class="doctor-info">
+                        <h3>{{doctor.name}}</h3>
+                        <div class="doctor-specialization">{{doctor.specialization}}</div>
+                        <p class="doctor-description">{{doctor.description|truncatewords:10}}</p>
+                        <p class="doctor-description">📍{{doctor.avail_location}}</p>
+                        <div class="time-slots-label">
+                            🕐 Available Time Slots
+                        </div>
+                        <div class="time-slots">
+                            <span class="time-slot">09:00 AM</span>
+                            <span class="time-slot">11:00 AM</span>
+                            <span class="time-slot">02:00 PM</span>
+                        </div>
+                        <form method="post" action="profile_page">
+                            {% csrf_token %}
+                            <input type="hidden" id="id" name="id" value="{{doctor.id}}" />
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" >Consult Now</button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="pagination" style="text-align:center; margin-top:40px;"></div>
+        </div>
+    </section>
+   
+    <!-- About Us Section -->
+    <section id="about" class="appointment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About HCL Health Care</h2>
+                <p>Committed to excellence in healthcare since 1995</p>
+            </div>
+ 
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 16px rgba(34, 150, 182, 0.12); margin-bottom: 30px;">
+                    <h3 style="color: #2296b6; font-size: 1.5rem; margin-bottom: 15px;">Our Mission</h3>
+                    <p style="color: #6b7785; line-height: 1.8;">
+                        At HCL Health Care, we are dedicated to providing compassionate, high-quality healthcare services to our community.
+                        With state-of-the-art facilities and a team of experienced professionals, we strive to make healthcare accessible and efficient for everyone.
+                    </p>
+                </div>
+ 
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 2px 8px rgba(34, 150, 182, 0.08); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🏥</div>
+                        <h4 style="color: #2a333d; margin-bottom: 10px;">Modern Facilities</h4>
+                        <p style="color: #6b7785; font-size: 0.9rem;">Equipped with the latest medical technology</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 2px 8px rgba(34, 150, 182, 0.08); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">👨‍⚕️</div>
+                        <h4 style="color: #2a333d; margin-bottom: 10px;">Expert Doctors</h4>
+                        <p style="color: #6b7785; font-size: 0.9rem;">Highly qualified and experienced professionals</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 2px 8px rgba(34, 150, 182, 0.08); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">⏰</div>
+                        <h4 style="color: #2a333d; margin-bottom: 10px;">24/7 Support</h4>
+                        <p style="color: #6b7785; font-size: 0.9rem;">Round-the-clock emergency services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Services Section -->
+    <section id="services" style="padding: 80px 20px; background: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive healthcare solutions for all your needs</p>
+            </div>
+ 
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto;">
+                <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+                    <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">❤️ Cardiology</h3>
+                    <p style="color: #6b7785; font-size: 0.9rem;">Comprehensive heart care including diagnostics, treatment, and preventive cardiology services.</p>
+                </div>
+               
+                <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+                    <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🧠 Neurology</h3>
+                    <p style="color: #6b7785; font-size: 0.9rem;">Advanced neurological care for brain, spine, and nervous system disorders.</p>
+                </div>
+               
+                <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+                    <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🦴 Orthopedics</h3>
+                    <p style="color: #6b7785; font-size: 0.9rem;">Expert treatment for bone, joint, and musculoskeletal conditions.</p>
+                </div>
+               
+                <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+                    <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">👶 Pediatrics</h3>
+                    <p style="color: #6b7785; font-size: 0.9rem;">Specialized care for infants, children, and adolescents with compassion.</p>
+                </div>
+               
+                <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+                    <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🔬 Dermatology</h3>
+                    <p style="color: #6b7785; font-size: 0.9rem;">Complete skin care solutions including cosmetic and medical dermatology.</p>
+                </div>
+               
+                <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+                    <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">⚕️ General Medicine</h3>
+                    <p style="color: #6b7785; font-size: 0.9rem;">Primary healthcare services for diagnosis, treatment, and preventive care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="lab-tests" style="padding: 80px 20px; background: white;">
+    <div class="container">
+        <div class="section-header">
+        <h2>Lab Tests</h2>
+        <p>Accurate diagnostics with fast turnaround and certified reporting</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto;">
+        <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+            <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🩸 Complete Blood Count (CBC)</h3>
+            <p style="color: #6b7785; font-size: 0.9rem;">Evaluates overall health and detects a range of disorders, including anemia and infections.</p>
+        </div>
+
+        <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+            <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🧪 Comprehensive Metabolic Panel (CMP)</h3>
+            <p style="color: #6b7785; font-size: 0.9rem;">Checks glucose, electrolytes, kidney and liver function to assess metabolic health.</p>
+        </div>
+
+        <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+            <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🧬 Thyroid Profile (TSH, T3, T4)</h3>
+            <p style="color: #6b7785; font-size: 0.9rem;">Measures thyroid hormones to diagnose hypo/hyperthyroidism and related conditions.</p>
+        </div>
+
+        <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+            <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">💉 Lipid Profile</h3>
+            <p style="color: #6b7785; font-size: 0.9rem;">Assesses cholesterol and triglycerides to evaluate cardiovascular risk.</p>
+        </div>
+
+        <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+            <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🧫 HbA1c (Glycated Hemoglobin)</h3>
+            <p style="color: #6b7785; font-size: 0.9rem;">Shows average blood glucose over 2–3 months for diabetes monitoring.</p>
+        </div>
+
+        <div style="background: #f0f7f9; padding: 30px; border-radius: 12px; border-left: 4px solid #2296b6;">
+            <h3 style="color: #2296b6; font-size: 1.2rem; margin-bottom: 12px;">🧴 Vitamin D & B12</h3>
+            <p style="color: #6b7785; font-size: 0.9rem;">Detects deficiencies impacting bone health, energy levels, and neurological function.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Information -->
+     <section id="contact" class="appointment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>We're here to help. Reach out to us anytime</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto;">
+                <!-- Contact Form -->
+                    <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(34, 150, 182, 0.12); margin-bottom: 20px;">
+                        <h3 style="color: #2a333d; font-size: 1.3rem; margin-bottom: 20px;">Contact Information</h3>
+                       
+                        <div style="margin-bottom: 20px;">
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                                <div style="width: 40px; height: 40px; background: #f0f7f9; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #2296b6; font-size: 1.2rem;">📞</div>
+                                <div>
+                                    <div style="font-weight: 600; color: #2a333d; margin-bottom: 3px;">Phone</div>
+                                    <div style="color: #6b7785; font-size: 0.9rem;">+91 7672068345 </div>
+                                </div>
+                            </div>
+                           
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                                <div style="width: 40px; height: 40px; background: #f0f7f9; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #2296b6; font-size: 1.2rem;">✉️</div>
+                                <div>
+                                    <div style="font-weight: 600; color: #2a333d; margin-bottom: 3px;">Email</div>
+                                    <div style="color: #6b7785; font-size: 0.9rem;">info@hclhealthcare.com</div>
+                                </div>
+                            </div>
+                           
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; background: #f0f7f9; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #2296b6; font-size: 1.2rem;">📍</div>
+                                <div>
+                                    <div style="font-weight: 600; color: #2a333d; margin-bottom: 3px;">Address</div>
+                                    <div style="color: #6b7785; font-size: 0.9rem;">HCL Tower 3 SEZ Avenue, Near Wipro Limited<br>Sholinganallur, Chennai</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(34, 150, 182, 0.12);">
+                        <h3 style="color: #2a333d; font-size: 1.3rem; margin-bottom: 15px;">Office Hours</h3>
+                        <div style="color: #6b7785; line-height: 1.8;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-weight: 600; color: #2a333d;">Monday - Friday:</span>
+                                <span>8:00 AM - 8:00 PM</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-weight: 600; color: #2a333d;">Saturday:</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="font-weight: 600; color: #2a333d;">Sunday:</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <div id="chatbot-container">
+  <div id="chatbot-header" onclick="toggleChatbot()">
+    💬 Chat with Doctor Bot
+  </div>
+ 
+  <div id="chatbot-body">
+    <div id="chatbot-messages"></div>
+ 
+    <div id="chatbot-input">
+      <input id="chatbot-text" placeholder="Type your message..." />
+      <button onclick="sendChatbotMessage()">➤</button>
+    </div>
+  </div>
+</div>
+ 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 HCL Health Care. All rights reserved by Team Kanyarasi</p>
+        </div>
+    </footer>
+ 
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+ 
+    <script>
+    
+        document.addEventListener("DOMContentLoaded", function () {
+
+        const doctors = document.querySelectorAll(".doctor-card");
+        const pagination = document.getElementById("pagination");
+
+        const itemsPerPage = 9;   // ✅ change if needed
+        let currentPage = 1;
+
+        function showPage(page) {
+            currentPage = page;
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+
+            doctors.forEach((card, index) => {
+                card.style.display =
+                    index >= start && index < end ? "block" : "none";
+            });
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            pagination.innerHTML = "";
+            const totalPages = Math.ceil(doctors.length / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement("button");
+                btn.innerText = i;
+
+                btn.style.margin = "5px";
+                btn.style.padding = "8px 14px";
+                btn.style.borderRadius = "6px";
+                btn.style.border = "1px solid #2296b6";
+                btn.style.background =
+                    i === currentPage ? "#2296b6" : "#ffffff";
+                btn.style.color =
+                    i === currentPage ? "#ffffff" : "#2296b6";
+                btn.style.cursor = "pointer";
+
+                btn.addEventListener("click", () => showPage(i));
+                pagination.appendChild(btn);
+            }
+        }
+
+        // ✅ Initialize
+            showPage(1);
+        });
+        // Set minimum date to today for appointment
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+        const maxDateObj = new Date();
+        maxDateObj.setMonth(maxDateObj.getMonth() + 3);
+        const maxDate = maxDateObj.toISOString().split('T')[0];
+        document.getElementById('appointmentDate').setAttribute('max' , maxDate)
+ 
+        // Get user name
+       
+ 
+        // Show toast notification
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = `toast ${type} show`;
+           
+            setTimeout(() => {
+                toast.className = 'toast';
+            }, 3000);
+        }
+ 
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+ 
+        // Form validation and submission
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+           
+            // Get form values
+            const specialization = document.getElementById('specialization').value;
+            const date = document.getElementById('date').value;
+            const location = document.getElementById('location').value;
+            const timeSlot = document.getElementById('timeSlot').value;
+           
+            // Hide all error messages
+            document.querySelectorAll('.error-message').forEach(el => {
+                el.style.display = 'none';
+            });
+           
+            // Validate
+            let isValid = true;
+           
+            if (!specialization) {
+                document.getElementById('specializationError').style.display = 'block';
+                isValid = false;
+            }
+           
+            if (!date) {
+                document.getElementById('dateError').style.display = 'block';
+                isValid = false;
+            }
+           
+            if (!location) {
+                document.getElementById('locationError').style.display = 'block';
+                isValid = false;
+            }
+           
+            if (!timeSlot) {
+                document.getElementById('timeSlotError').style.display = 'block';
+                isValid = false;
+            }
+           
+            if (!isValid) {
+                showToast('Please fill in all fields', 'error');
+                return;
+            }
+           
+            // Format date for display
+            const dateObj = new Date(date);
+            const formattedDate = dateObj.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+           
+            // Show success message
+            showToast(`Appointment booked successfully for ${specialization} on ${formattedDate} at ${timeSlot}`, 'success');
+           
+            // Reset form
+            this.reset();
+        });
+ 
+        // Initialize
+        getUserName();
+        function toggleChatbot() {
+    const body = document.getElementById("chatbot-body");
+    body.style.display = body.style.display === "none" ? "block" : "none";
+    }
+   
+    function addMessage(sender, text) {
+    const box = document.getElementById("chatbot-messages");
+    box.innerHTML += `<p><b>${sender}:</b> ${text}</p>`;
+    box.scrollTop = box.scrollHeight;
+    }
+   
+    function sendChatbotMessage() {
+    const input = document.getElementById("chatbot-text");
+    const message = input.value.trim();
+    if (!message) return;
+   
+    addMessage("You", message);
+    input.value = "";
+   
+    fetch("/Bot/api/chat/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: message })
+    })
+    .then(res => res.json())
+    .then(data => addMessage("Bommali", data.reply))
+    .catch(() => addMessage("Bommali", "Server error. Please try again."));
+    }
+    </script>
+{% include 'message_popup.html' %}
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - HCL Health Care</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #b5179e 0%, #2296b6 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+ 
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #6376db;
+        }
+ 
+       
+ 
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+ 
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+ 
+        nav a:hover {
+            color: #2296b6;
+        }
+ 
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+ 
+        .register-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            width: 100%;
+            max-width: 500px;
+        }
+ 
+        .register-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+ 
+        .register-header h1 {
+            color: #5d54de;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+ 
+        .register-header p {
+            color: #666;
+            font-size: 14px;
+        }
+ 
+        .form-group {
+            margin-bottom: 20px;
+        }
+ 
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+ 
+        .form-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+ 
+        .form-group input:focus {
+            outline: none;
+            border-color: #2296b6;
+            box-shadow: 0 0 0 3px rgba(34, 150, 182, 0.1);
+        }
+ 
+        .form-group input::placeholder {
+            color: #aaa;
+        }
+ 
+        .name-row {
+            display: flex;
+            gap: 15px;
+        }
+ 
+        .name-row .form-group {
+            flex: 1;
+        }
+ 
+        .btn-register {
+            width: 100%;
+            padding: 16px;
+            background: #5d54de;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+ 
+        .btn-register:hover {
+            transform: translateY(-2px);
+            background: #9a37b2;
+            box-shadow: 0 8px 25px rgba(124, 149, 239, 0.4);
+        }
+ 
+        .login-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #666;
+            font-size: 14px;
+        }
+ 
+        .login-link a {
+            color: #2296b6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+ 
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+ 
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+ 
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+ 
+        .toast {
+            padding: 16px 24px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 10px;
+            animation: slideIn 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+ 
+        .toast.success {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+ 
+        .toast.error {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+ 
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+ 
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+ 
+            nav ul {
+                gap: 20px;
+            }
+ 
+            .register-card {
+                padding: 30px 25px;
+                margin: 20px;
+            }
+ 
+            .name-row {
+                flex-direction: column;
+                gap: 0;
+            }
+ 
+            .register-header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>HCLTech HealthCare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="main-content">
+        <div class="register-card">
+            <div class="register-header">
+                <h1>Create Your Account</h1>
+                <p>Join HCL Health Care for better healthcare services</p>
+            </div>
+            <form id="registrationForm" method="post" action="/employee/register">
+                {% csrf_token %}
+                <div class="register-header">
+                    {% for message in messages %}
+                    <h3 style="color:#dc2626;">{{message}}</h3>
+                    {% endfor %}
+                </div>
+                <div class="form-group">
+                    <label for="sapId">SAP ID</label>
+                    <input type="text" id="sapId" name="sapId" placeholder="Enter your SAP ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="userName">userName</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter a User Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="officeMail">Office Mail ID</label>
+                    <input type="email" id="officeMail" name="officeMail" placeholder="Enter your office email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                 <div class="form-group">
+                    <label for="Re-enter password">Re-enter Password</label>
+                    <input type="password" id="Re-enter password" name="Re-enter password" placeholder="Re-enter the same password" required>
+                </div>
+                <div class="name-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-register">Register</button>
+            </form>
+            <div class="login-link">
+                Already have an account? <a href="login">Login</a>
+            </div>
+        </div>
+    </div>
+ 
+    <footer>
+        <p>&copy; 2024 HCL Health Care. All rights reserved.</p>
+    </footer>
+ 
+    <div class="toast-container" id="toastContainer"></div>
+    <!--
+    
+    <script>
+        function showToast(message, type) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            container.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+ 
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+ 
+            const sapId = document.getElementById('sapId').value.trim();
+            const officeMail = document.getElementById('officeMail').value.trim();
+            const password = document.getElementById('password').value;
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+ 
+            // Validation
+            if (!sapId || !officeMail || !password || !firstName || !lastName) {
+                showToast('Please fill in all fields', 'error');
+                return;
+            }
+ 
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(officeMail)) {
+                showToast('Please enter a valid email address', 'error');
+                return;
+            }
+ 
+            if (password.length < 6) {
+                showToast('Password must be at least 6 characters', 'error');
+                return;
+            }
+ 
+            // Success
+            showToast('Registration successful! Welcome to HCL Health Care', 'success');
+            this.reset();
+        });
+    </script>
+    -->
+{% include 'message_popup.html' %}
+</body>
+</html>

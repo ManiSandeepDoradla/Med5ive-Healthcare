@@ -1,0 +1,2828 @@
+[
+  {
+    "text": "I noticed fertility concerns and cycle tracking recently.",
+    "response": "Consult a Gynecologist.",
+    "category": "Gynecologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I noticed recurrent kidney infections recently.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "New onset bone pain without injury since last week.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I feel anxiety and panic attacks.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include itching with liver issues.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel hand tremors and stiffness.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening back pain after lifting this week.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include attention and focus difficulties.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I have exposure to tuberculosis.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing fainting — is this an emergency?",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I have autoimmune flare symptoms.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset health anxiety since last week.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel health anxiety.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Persistent bluish toes and numbness for days.",
+    "response": "Consult a Vascular Surgeon.",
+    "category": "Vascular Surgeon",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Sudden onset of severe allergic reaction (anaphylaxis).",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I have elbow pain after sports.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Sudden onset of severe breathlessness.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I noticed long-lasting sore throat with fever recently.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Recurring post-viral fatigue syndrome over months.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include persistent cough and chest congestion.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from thyroid problems and fatigue.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "New onset redness and itching in eyes since last week.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing child fever and cough.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing eyelid swelling.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include eye discharge in the morning.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I feel irregular periods and cramps.",
+    "response": "Consult a Gynecologist.",
+    "category": "Gynecologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from common cold and weakness.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent bone pain without injury for days.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "New onset COPD-like symptoms since last week.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Worsening nausea and stomach cramps this week.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening diarrhea for two days this week.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I have recurrent sinus allergies.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "New onset teeth grinding at night since last week.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I noticed acid reflux at night recently.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I have sports injury rehab.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Persistent sports injury rehab for days.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening dry eyes and dry mouth (sicca) this week.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include urinary urgency and leakage.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening indigestion after meals this week.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing blood in stool or urine.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Recurring anger management issues over months.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent pain in groin with urination for days.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include malaria-like fever after travel.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I noticed general unwellness recently.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I have sinusitis with facial pain.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I have post-fracture mobility training.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing nocturnal chest discomfort.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Persistent palpitations and dizziness for days.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I have dry cough for weeks.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include frequent acidity and heartburn.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing jaw pain while chewing.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Worsening hip pain while climbing stairs this week.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I noticed palpitations and dizziness recently.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset vomiting and diarrhea in child since last week.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "New onset sciatica relief program since last week.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel neck posture correction.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel vomiting and diarrhea in child.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset ulcer on toes with poor circulation since last week.",
+    "response": "Consult a Vascular Surgeon.",
+    "category": "Vascular Surgeon",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Sudden onset of labor complications.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I have rash in toddler.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing breast reconstruction after surgery.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Persistent kidney stone complications for days.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from high creatinine levels.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening lingering cough after infection this week.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel painful external hemorrhoids.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing dark urine and pale stools.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I have thyroid problems and fatigue.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Persistent orthopnea (breathless lying flat) for days.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from small lumps needing removal.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from palpitations and dizziness.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from rash in toddler.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel recurrent colds in school-age.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "New onset post-viral cough since last week.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing test anxiety.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent post-surgery rehabilitation for days.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing core strengthening for back pain.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Recurring double vision occasionally over months.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from heavy menstrual bleeding.",
+    "response": "Consult a Gynecologist.",
+    "category": "Gynecologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include lower abdominal pain with loose motions.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I noticed delayed milestones recently.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include blurry vision and eye strain.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing difficulty seeing at night.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from foamy urine and proteinuria.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from menopause hot flashes.",
+    "response": "Consult a Gynecologist.",
+    "category": "Gynecologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "New onset dry eyes and burning sensation since last week.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent core strengthening for back pain for days.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Worsening keloid scar treatment this week.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Persistent family history of cancer and screening for days.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Worsening behavioral problems in child this week.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I have cloudy urine and foul smell.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Worsening dust allergy with cough this week.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from mild fever and body ache.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from swelling in legs and eyes.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include painful external hemorrhoids.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening test anxiety this week.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I have ankle sprain and tenderness.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Persistent sore throat and runny nose for days.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include ear pain in child.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I noticed rash in toddler recently.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing fatigue with minimal exertion.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include bluish toes and numbness.",
+    "response": "Consult a Vascular Surgeon.",
+    "category": "Vascular Surgeon",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing mild fever and body ache.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include social anxiety.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I have recurrent mouth ulcers with joint pain.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Worsening burn contracture management this week.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "New onset drug allergy rash since last week.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Worsening persistent lump in neck or breast this week.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Worsening high creatinine levels this week.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include toothache and sensitivity.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I feel testicular pain and swelling.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from unexplained weight loss and fatigue.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include sore throat and runny nose.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel electrolyte imbalance and cramps.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include vaginal discharge and itching.",
+    "response": "Consult a Gynecologist.",
+    "category": "Gynecologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from ankle sprain and tenderness.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Worsening ear pain in child this week.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from jaw pain while chewing.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "New onset cosmetic rhinoplasty interest since last week.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel skin graft requirement.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I noticed menopause hot flashes recently.",
+    "response": "Consult a Gynecologist.",
+    "category": "Gynecologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Recurring high sugar levels recently over months.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from body ache after flu.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing severe headaches and visual aura.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from high HbA1c levels.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include seizure-like episodes.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include kidney stone complications.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Recurring psoriasis patches over months.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Immediate help needed for extreme dehydration.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent reduced urine output for days.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "How are you?",
+    "response": "I'm here and ready to help with your health questions.",
+    "category": "General Conversation",
+    "intent": "general_conversation",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I have weakness on one side of the body.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel post-surgery rehabilitation.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from frequent acidity and heartburn.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Persistent chest tightness after dust exposure for days.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from persistent sadness and low mood.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing frozen shoulder exercises.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Worsening core strengthening for back pain this week.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Persistent unintentional weight loss for days.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I noticed scar revision needs recently.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from infant colic and crying.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I have vomiting with jaundice.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I have lipoma removal consultation.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I noticed lingering cough after infection recently.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset anxiety and panic attacks since last week.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Recurring mild sinus pressure over months.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include dizziness and ear imbalance.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Sudden onset of difficulty breathing after exposure to allergens.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I have post-viral fatigue syndrome.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include knee pain while walking.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset swollen abdomen (ascites) since last week.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Recurring post-head injury headaches over months.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent inguinal hernia bulge for days.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "New onset recurrent sinus allergies since last week.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from vomiting with jaundice.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent dry skin and eczema for days.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing non-healing ulcer.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I have blood in stool or urine.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing difficulty breathing after exposure to allergens — is this an emergency?",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I have increased thirst and urination.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel breathing difficulty during exercise.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing elevated cholesterol.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I noticed constant hunger with high sugar recently.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset bloating and acidity since last week.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include hives and allergy.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I feel recurrent infections.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I feel rest pain in foot at night.",
+    "response": "Consult a Vascular Surgeon.",
+    "category": "Vascular Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset watery eyes and irritation since last week.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Worsening recurrent kidney infections this week.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Recurring kidney stone complications over months.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Recurring bad breath and gum pain over months.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Recurring appendicitis-like pain over months.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I have stomach pain and vomiting.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Persistent neck posture correction for days.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Worsening unintentional weight loss this week.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Worsening persistent cough and chest congestion this week.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent symmetrical joint aches for days.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "New onset dust allergy with cough since last week.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing post-viral fatigue.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from bad breath and gum pain.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include rest pain in foot at night.",
+    "response": "Consult a Vascular Surgeon.",
+    "category": "Vascular Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I noticed lipoma removal consultation recently.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing tick-bite with fever.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening COPD-like symptoms this week.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I have keloid scar treatment.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I feel arm pain with weak pulses.",
+    "response": "Consult a Vascular Surgeon.",
+    "category": "Vascular Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring coping with chronic illness over months.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Recurring eye discharge in the morning over months.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Recurring chest tightness after dust exposure over months.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel high HbA1c levels.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing pain in small joints of hands.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I noticed jaundice and yellow eyes recently.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing noisy breathing at night.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset post-viral fatigue syndrome since last week.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I have numbness or tingling in limbs.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I noticed breathing difficulty during exercise recently.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from pain in small joints of hands.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I noticed loss of appetite in child recently.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel cavity and food stuck.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I noticed vomiting with jaundice recently.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I noticed toothache and sensitivity recently.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I have vaginal discharge and itching.",
+    "response": "Consult a Gynecologist.",
+    "category": "Gynecologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Recurring bloating and acidity over months.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I have pet dander allergy.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Worsening joint stiffness in the morning this week.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I noticed acute kidney injury suspicion recently.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include weakness on one side of the body.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset recurrent infections with weakness since last week.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel blood in stool or urine.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "New onset adjustment difficulties after relocation since last week.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring testicular pain and swelling over months.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I noticed chest pain on exertion recently.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset chest tightness after dust exposure since last week.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I have post-surgery rehabilitation.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from hand deformity correction.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I noticed ear pain and fullness recently.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include bloating and acidity.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent chronic back pain with nerve symptoms for days.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing facial melasma.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent sneezing and watery eyes for days.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Emergency: I have dangerously low blood sugar (unresponsive).",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring recurrent urinary tract infections over months.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring sciatica-like leg pain over months.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Persistent recurrent infections with weakness for days.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "Persistent seasonal allergies and sneezing for days.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I noticed skin pigmentation changes recently.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Persistent work stress and burnout for days.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing back pain after lifting.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel watery eyes and irritation.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from recurrent infections with weakness.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring voice changes and strain over months.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include loss of smell with cold.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from ear discharge and itching.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from skin cysts requiring excision.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent blood in stool for days.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include high creatinine levels.",
+    "response": "Consult a Nephrologist.",
+    "category": "Nephrologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "New onset neck posture correction since last week.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I have teeth grinding at night.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include burn contracture management.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I feel swollen joints and fatigue.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Persistent ankle sprain and tenderness for days.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "New onset mild fever and body ache since last week.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include carotid artery disease screening.",
+    "response": "Consult a Vascular Surgeon.",
+    "category": "Vascular Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I have allergic rhinitis.",
+    "response": "Consult a Allergist/Immunologist.",
+    "category": "Allergist/Immunologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Recurring ear pain in child over months.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from work stress and burnout.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Worsening abnormal thyroid tests this week.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent increased thirst and urination for days.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I suffer from chest pain on exertion.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include post-surgery rehabilitation.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Recurring swollen abdomen (ascites) over months.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring obsessive thoughts and compulsions over months.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset bleeding gums while brushing since last week.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing irregular heartbeat (arrhythmia).",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset fear of public speaking since last week.",
+    "response": "Consult a Psychologist.",
+    "category": "Psychologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I noticed testicular pain and swelling recently.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset post-surgery rehabilitation since last week.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Persistent recurrent urinary tract infections for days.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I noticed HIV-related symptoms recently.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I feel double vision occasionally.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Sudden onset of black tarry stools.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include elevated cholesterol.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring dizziness and ear imbalance over months.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Persistent malaria-like fever after travel for days.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Recurring gallbladder pain after fatty meals over months.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel umbilical hernia symptoms.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Worsening malaria-like fever after travel this week.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening neck posture correction this week.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset body ache after flu since last week.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Sudden onset of seizure.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include fever with rash.",
+    "response": "Consult a Infectious Disease Specialist.",
+    "category": "Infectious Disease",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Worsening recurrent colds in school-age this week.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing dizziness and light-headedness.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include fungal infection between toes.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include non-healing ulcer.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "New onset insulin resistance since last week.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent seborrheic dermatitis for days.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I have seasonal allergies and sneezing.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing acid reflux at night.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I have sciatica-like leg pain.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I feel low-grade fever and chills.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing joint pain and morning stiffness.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing inguinal hernia bulge.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing upper right abdominal pain.",
+    "response": "Consult a Hepatologist.",
+    "category": "Hepatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "New onset night-time urination (nocturia) since last week.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing vomiting blood — is this an emergency?",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing piles/hemorrhoids with bleeding.",
+    "response": "Consult a General Surgeon.",
+    "category": "General Surgeon",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel post-viral cough.",
+    "response": "Consult a Pulmonologist.",
+    "category": "Pulmonologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include abnormal bleeding and bruising.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I feel obsessive thoughts and compulsions.",
+    "response": "Consult a Psychiatrist.",
+    "category": "Psychiatrist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing dry eyes and dry mouth (sicca).",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I noticed itchy rash and redness recently.",
+    "response": "Consult a Dermatologist.",
+    "category": "Dermatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I noticed sports injury rehab recently.",
+    "response": "Consult a Physiotherapist.",
+    "category": "Physiotherapist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I feel muscle aches with elevated inflammation markers.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Worsening high HbA1c levels this week.",
+    "response": "Consult a Endocrinologist.",
+    "category": "Endocrinologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I am experiencing balance problems and vertigo.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent recurrent mouth ulcers with joint pain for days.",
+    "response": "Consult a Rheumatologist.",
+    "category": "Rheumatologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I have frequent migraines.",
+    "response": "Consult a Neurologist.",
+    "category": "Neurologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I noticed broken tooth after accident recently.",
+    "response": "Consult a Dentist.",
+    "category": "Dentist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Immediate help needed for self-harm risk.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I noticed child tummy pain at night recently.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent loss of appetite in child for days.",
+    "response": "Consult a Pediatrician.",
+    "category": "Pediatrician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "I noticed difficulty seeing at night recently.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Recurring fatigue with minimal exertion over months.",
+    "response": "Consult a Cardiologist.",
+    "category": "Cardiologist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "I have blocked nose and sinus pressure.",
+    "response": "Consult a ENT (Otolaryngologist).",
+    "category": "ENT",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "weeks",
+    "language": "en"
+  },
+  {
+    "text": "Emergency: I have severe burns.",
+    "response": "EMERGENCY — Call your local emergency number immediately and seek urgent medical care.",
+    "category": "Emergency",
+    "intent": "emergency",
+    "severity": "high",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "I feel redness and itching in eyes.",
+    "response": "Consult a Ophthalmologist.",
+    "category": "Ophthalmologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "Worsening stomach pain and vomiting this week.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Persistent night sweats and weight loss for days.",
+    "response": "Consult a Oncologist.",
+    "category": "Oncologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "Recurring neck pain and muscle spasm over months.",
+    "response": "Consult a Orthopedist.",
+    "category": "Orthopedist",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent dizziness and light-headedness for days.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "low",
+    "duration": "months",
+    "language": "en"
+  },
+  {
+    "text": "Persistent cosmetic rhinoplasty interest for days.",
+    "response": "Consult a Plastic Surgeon.",
+    "category": "Plastic Surgeon",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "hours",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include general unwellness.",
+    "response": "Consult a General Physician.",
+    "category": "General Physician",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "days",
+    "language": "en"
+  },
+  {
+    "text": "I feel blood in stool.",
+    "response": "Consult a Gastroenterologist.",
+    "category": "Gastroenterologist",
+    "intent": "route_specialist",
+    "severity": "unknown",
+    "duration": "unknown",
+    "language": "en"
+  },
+  {
+    "text": "My symptoms include difficulty urinating and weak stream.",
+    "response": "Consult a Urologist.",
+    "category": "Urologist",
+    "intent": "route_specialist",
+    "severity": "medium",
+    "duration": "months",
+    "language": "en"
+  }
+]

@@ -1,0 +1,99 @@
+{% if messages %}
+    <style>
+        /* Overlay: Covers the whole screen */
+        .msg-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* On top of everything */
+            animation: fadeIn 0.3s;
+        }
+ 
+        /* The Box */
+        .msg-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+            animation: slideDown 0.3s;
+        }
+ 
+        /* Message Colors */
+        .msg-icon { font-size: 40px; margin-bottom: 10px; display: block; }
+        
+        .success { color: #28a745; border-top: 5px solid #28a745; }
+        .error { color: #dc3545; border-top: 5px solid #dc3545; }
+        .warning { color: #ffc107; border-top: 5px solid #ffc107; }
+        .info { color: #17a2b8; border-top: 5px solid #17a2b8; }
+ 
+        /* Close Button */
+        .btn-close-msg {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .btn-close-msg:hover { opacity: 0.8; }
+ 
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideDown { from { transform: translateY(-20px); } to { transform: translateY(0); } }
+    </style>
+ 
+    {% for message in messages %}
+    <div class="msg-overlay" id="msg-{{ forloop.counter }}">
+        <div class="msg-box {{ message.tags }}">
+            
+            <span class="msg-icon">
+                {% if message.tags == 'success' %}✔{% endif %}
+                {% if message.tags == 'error' %}✖{% endif %}
+                {% if message.tags == 'warning' %}⚠{% endif %}
+                {% if message.tags == 'info' %}ℹ{% endif %}
+            </span>
+ 
+            <h3>
+                {% if message.tags == 'success' %}Success!{% endif %}
+                {% if message.tags == 'error' %}Error!{% endif %}
+                {% if message.tags == 'warning' %}Warning{% endif %}
+                {% if message.tags == 'info' %}Notice{% endif %}
+            </h3>
+ 
+            <p>{{ message }}</p>
+            {% if message.tags == 'error' %}
+            <button class="btn-close-msg" onclick="history.back(); return false;" class="btn-edit">
+                OK
+            </button>
+            {% else %}
+            <button class="btn-close-msg" onclick="closeMessage('{{forloop.counter}}')">
+                OK
+            </button>
+            {% endif %}
+
+        </div>
+    </div>
+    {% endfor %}
+    <script>
+        // Helper function to hide the popup
+        function closeMessage(id) {
+            document.getElementById('msg-overlay-' + id).style.display = 'none';
+        }
+ 
+        // METHOD 3: Auto-Close after 3 seconds (Optional)
+        setTimeout(function() {
+            const overlays = document.querySelectorAll('.msg-overlay');
+            overlays.forEach(function(overlay) {
+                overlay.style.display = 'none';
+            });
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+{% endif %}

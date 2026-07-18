@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - HCL Health Care</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #b5179e 0%, #2296b6 100%);
+            min-height: 100vh;
+        }
+ 
+        /* Header Styles */
+        .header {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+ 
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 30px;
+            font-weight: bold;
+            color: #6376db;
+            text-decoration: none;
+        }
+ 
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2296b6, #e77758);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+ 
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+ 
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+ 
+        .nav-links a:hover {
+            color: #2296b6;
+        }
+ 
+        /* Main Content */
+        .main-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+ 
+        .booking-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+ 
+        .booking-header {
+            background: linear-gradient(135deg, #6376db 0%, #6376db 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+ 
+        .booking-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+ 
+        .booking-header p {
+            opacity: 0.9;
+        }
+ 
+        .doctor-info {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem 2rem;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+        .doctor-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            overflow: hidden;
+            object-fit: contain;
+        }
+        .doctor-avatar img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+ 
+        .doctor-details h3 {
+            color: #2296b6;
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+ 
+        .doctor-details .specialization {
+            color: #e77758;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+ 
+        .doctor-details .availability {
+            color: #666;
+            font-size: 0.9rem;
+        }
+ 
+        .booking-form {
+            padding: 2rem;
+        }
+ 
+        .form-section {
+            margin-bottom: 1.5rem;
+        }
+ 
+        .form-section h4 {
+            color: #2296b6;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+ 
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+ 
+        .form-group {
+            margin-bottom: 1rem;
+        }
+ 
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-weight: 500;
+        }
+ 
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+ 
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2296b6;
+            box-shadow: 0 0 0 3px rgba(34, 150, 182, 0.1);
+        }
+ 
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+ 
+        .time-slots {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+ 
+        .time-slot {
+            padding: 0.75rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+        }
+ 
+        .time-slot:hover {
+            border-color: #2296b6;
+            background: rgba(34, 150, 182, 0.05);
+        }
+ 
+        .time-slot.selected {
+            border-color: #2296b6;
+            background: #2296b6;
+            color: white;
+        }
+ 
+        .time-slot.unavailable {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #f5f5f5;
+        }
+ 
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+ 
+        .btn-primary {
+            background: #5d54de;
+            color: white;
+            width: 100%;
+        }
+ 
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #9a37b2;
+            box-shadow: 0 5px 20px rgba(34, 150, 182, 0.4);
+        }
+ 
+        .btn-secondary {
+            background: white;
+            color: #2296b6;
+            border: 2px solid #2296b6;
+        }
+ 
+        .btn-secondary:hover {
+            background: rgba(34, 150, 182, 0.1);
+        }
+ 
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+ 
+        .form-actions .btn {
+            flex: 1;
+        }
+ 
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+ 
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+ 
+        .toast.success {
+            background: linear-gradient(135deg, #28a745, #20c997);
+        }
+ 
+        .toast.error {
+            background: linear-gradient(135deg, #dc3545, #e77758);
+        }
+ 
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+ 
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+ 
+            .nav-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+ 
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+ 
+            .time-slots {
+                grid-template-columns: repeat(2, 1fr);
+            }
+ 
+            .doctor-info {
+                flex-direction: column;
+                text-align: center;
+            }
+ 
+            .form-actions {
+                flex-direction: column;
+            }
+        }
+        /* Toggle switch base */
+        .toggle-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .toggle {
+            --w: 56px;
+            --h: 28px;
+            position: relative;
+            width: var(--w);
+            height: var(--h);
+        }
+        .toggle input {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 0; height: 0;
+            position: absolute;
+            opacity: 0;
+        }
+        .toggle-track {
+            position: absolute;
+            inset: 0;
+            background: #cfd8dc;
+            border-radius: var(--h);
+            transition: background .25s ease;
+        }
+        .toggle-thumb {
+            position: absolute;
+            top: 3px; left: 3px;
+            width: calc(var(--h) - 6px);
+            height: calc(var(--h) - 6px);
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 1px 3px rgba(0,0,0,.25);
+            transition: transform .25s ease;
+        }
+        .toggle input:checked + .toggle-track {
+            background: #4caf50;
+        }
+        .toggle input:checked + .toggle-track + .toggle-thumb {
+            transform: translateX(calc(var(--w) - var(--h)));
+        }
+
+        /* Helper text */
+        .toggle-label {
+            font-weight: 600;
+            min-width: 140px;
+        }
+        .toggle-state {
+            font-size: 0.95rem;
+            color: #37474f;
+        }
+
+        /* Conditional section */
+        .hidden { display: none; }
+        .register-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+ 
+        .register-header h1 {
+            color: #5d54de;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+ 
+        .register-header p {
+            color: #666;
+            font-size: 14px;
+        }
+        .register-header h1 {
+                font-size: 24px;
+            }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="hcl-healthcare.html" class="logo">
+                <!--div class="logo-icon"></div-->
+                HCL Health Care
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <!--li><a href="hcl-healthcare.html#about">About Us</a></li>
+                    <li><a href="hcl-healthcare.html#services">Services</a></li>
+                    <li><a href="hcl-healthcare.html#doctors">Doctors</a></li>
+                    <li><a href="hcl-healthcare.html#contact">Contact</a></li-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="booking-card">
+            <div class="booking-header">
+                <h1>Book Your Appointment</h1>
+                <p>Schedule a consultation with our expert doctors</p>
+            </div>
+ 
+            <!-- Doctor Info (populated by JS) -->
+            <div class="doctor-info" id="doctorInfo">
+                <div class="doctor-avatar" id="doctorAvatar"><img src = "{{doctor.photo_url}}"></div>
+                <div class="doctor-details">
+                    <h3 id="doctorName">{{doctor.name}}</h3>
+                    <p class="specialization" id="doctorSpecialization">{{doctor.specialization}}</p>
+                    <p class="availability">✓ Available for consultation</p>
+                </div>
+            </div>
+            {% csrf_token %}
+                <div class="register-header">
+                    {% for message in messages %}
+                    <h3 style="color:#dc2626;">{{message}}</h3>
+                    {% endfor %}
+                </div>
+            <form class="booking-form" id="bookingForm" action="book_appointment_step1" method="post">
+                {% csrf_token %}
+                <!-- Patient Information -->
+                 <input type="hidden" name="doctor_specialization" id="doctor_specialization" value="{{doctor.specialization}}">
+                 <input type="hidden" name="doctor_id" id="doctor_id" value="{{doctor.id}}">
+                <div class="form-section">
+                    <h4>📋 Patient Information</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patientName">Full Name *</label>
+                            <input type="text" id="patientName" name="patientName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="patientEmail">Email Address *</label>
+                            <input type="email" id="patientEmail" name="patientEmail" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patientPhone">Phone Number *</label>
+                            <input type="tel" id="patientPhone" name="patientPhone" placeholder="Enter your phone number" required>
+                            <div class="form-group">
+                            <label for="patientAge">Age *</label>
+                            <input type="number" id="patientAge" name="patientAge" placeholder="Enter your age" min="1" max="120" required>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Doctor Selection -->
+                <!--div class="form-section">
+                    <h4>👨‍⚕️ Select Doctor</h4>
+                    <div class="form-group">
+                        <label for="doctorSelect">Choose a Doctor *</label>
+                        <select id="doctorSelect" name="doctor" required>
+                            <option value="">-- Select a Doctor --</option>
+                            <option value="priya" data-name="Dr. Priya Sharma" data-spec="Cardiologist">Dr. Priya Sharma - Cardiologist</option>
+                            <option value="james" data-name="Dr. James Williams" data-spec="Dermatologist">Dr. James Williams - Dermatologist</option>
+                            <option value="mei" data-name="Dr. Mei Chen" data-spec="Pediatrician">Dr. Mei Chen - Pediatrician</option>
+                            <option value="carlos" data-name="Dr. Carlos Rodriguez" data-spec="Orthopedic Surgeon">Dr. Carlos Rodriguez - Orthopedic Surgeon</option>
+                        </select>
+                    </div>
+                </div-->
+                <!-- ✅ Appointment Type (Toggle) -->
+                <div class="form-section">
+                    <h4>📌 Appointment Type</h4>
+                    <div class="toggle-wrap">
+                    <span class="toggle-label">Online / Offline *</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="appointmentTypeToggle" aria-label="Toggle appointment type">
+                        <span class="toggle-track"></span>
+                        <span class="toggle-thumb"></span>
+                    </label>
+                    <span id="appointmentTypeText" class="toggle-state">Online</span>
+                    </div>
+                    <!-- Hidden field actually submitted to backend -->
+                    <input type="hidden" id="appointmentType" name="appointmentType" value="online" required>
+                </div>
+
+                <!-- 🚖 Service Cab Option (Toggle) -->
+                <div class="form-section hidden" id="cabSection">
+                    <h4>🚖 Service Cab Option</h4>
+                    <div class="toggle-wrap">
+                    <span class="toggle-label">Need a cab?</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="cabToggle" aria-label="Toggle cab service">
+                        <span class="toggle-track"></span>
+                        <span class="toggle-thumb"></span>
+                    </label>
+                    <span id="cabText" class="toggle-state">No</span>
+                    </div>
+                    <!-- Hidden field actually submitted to backend -->
+                    <input type="hidden" id="cabService" name="cabService" value="No">
+                </div>
+                <!-- Appointment Date & Time -->
+                <div class="form-section">
+                    <h4>📅 Appointment Date & Time</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentDate">Preferred Date *</label>
+                            <input type="date" id="appointmentDate" name="appointmentDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Time Slot *</label>
+                        <select id="timeSlot" name="timeSlot" required>
+                            <option value="">Select time slot</option>
+                            <option value="09:00 AM">09:00 AM</option>
+                            <option value="09:30 AM">09:30 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="10:30 AM">10:30 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="11:30 AM">11:30 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="12:30 PM">12:30 PM</option>
+                            <option value="01:00 PM">01:00 PM</option>
+                            <option value="01:30 PM">01:30 PM</option>
+                            <option value="02:00 PM">02:00 PM</option>
+                            <option value="02:30 PM">02:30 PM</option>
+                            <option value="03:00 PM">03:00 PM</option>
+                            <option value="03:30 PM">03:30 PM</option>
+                            <option value="04:00 PM">04:00 PM</option>
+                            <option value="04:30 PM">04:30 PM</option>
+                            <option value="05:00 PM">05:00 PM</option>
+                            <option value="05:30 PM">05:30 PM</option>
+                            <option value="06:00 PM">06:00 PM</option>
+                            <option value="06:30 PM">06:30 PM</option>
+                            <option value="07:00 PM">07:00 PM</option>
+                            <option value="07:30 PM">07:30 PM</option>
+                            <option value="08:00 PM">08:00 PM</option>
+                            <option value="08:30 PM">08:30 PM</option>
+                            <option value="09:00 PM">09:00 PM</option>
+                        </select>
+                        <input type="hidden" id="selectedTime" name="selectedTime" required>
+                    </div>
+                </div>
+ 
+                <!-- Reason for Visit -->
+                <div class="form-section">
+                    <h4>📝 Reason for Visit</h4>
+                    <div class="form-group">
+                        <label for="visitReason">Describe your symptoms or reason for consultation</label>
+                        <textarea id="visitReason" name="visitReason" placeholder="Please describe your symptoms or reason for visit..."></textarea>
+                    </div>
+                </div>
+ 
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="window.location.href='hcl-healthcare.html'">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                </div>
+            </form>
+        </div>
+    </main>
+ 
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 HCL Health Care. All rights reserved.</p>
+    </footer>
+    <script>
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('appointmentDate').setAttribute('min', today);
+        const maxDateObj = new Date();
+        maxDateObj.setMonth(maxDateObj.getMonth() + 3);
+        const maxDate = maxDateObj.toISOString().split('T')[0];
+        document.getElementById('appointmentDate').setAttribute('max' , maxDate)
+
+        const appointmentTypeToggle = document.getElementById('appointmentTypeToggle');
+        const appointmentTypeText   = document.getElementById('appointmentTypeText');
+        const appointmentTypeHidden = document.getElementById('appointmentType');
+
+        const cabSection = document.getElementById('cabSection');
+        const cabToggle  = document.getElementById('cabToggle');
+        const cabText    = document.getElementById('cabText');
+        const cabHidden  = document.getElementById('cabService');
+
+        const timeSlot = document.getElementById('timeSlot');
+        const selectedTime = document.getElementById('selectedTime');
+
+        // Initialize states
+        function initStates() {
+            // Appointment type default: Online
+            appointmentTypeToggle.checked = false;
+            appointmentTypeText.textContent = 'Online';
+            appointmentTypeHidden.value = 'online';
+            cabSection.classList.add('hidden');
+
+            // Cab default: No
+            cabToggle.checked = false;
+            cabText.textContent = 'No';
+            cabHidden.value = 'No';
+        }
+        initStates();
+
+        // Toggle: Appointment Type (unchecked=Online, checked=Offline)
+        appointmentTypeToggle.addEventListener('change', () => {
+            const isOffline = appointmentTypeToggle.checked;
+            appointmentTypeText.textContent = isOffline ? 'Offline' : 'Online';
+            appointmentTypeHidden.value = isOffline ? 'offline' : 'online';
+
+            // Show cab section only for Offline
+            cabSection.classList.toggle('hidden', !isOffline);
+
+            // Reset cab toggle if switching back to Online
+            if (!isOffline) {
+            cabToggle.checked = false;
+            cabText.textContent = 'No';
+            cabHidden.value = 'No';
+            }
+        });
+
+        // Toggle: Cab Service (unchecked=No, checked=Yes)
+        cabToggle.addEventListener('change', () => {
+            const needCab = cabToggle.checked;
+            cabText.textContent = needCab ? 'Yes' : 'No';
+            cabHidden.value = needCab ? 'Yes' : 'No';
+        });
+
+        // Keep hidden selectedTime in sync
+        timeSlot.addEventListener('change', () => {
+            selectedTime.value = timeSlot.value;
+        });
+
+        // Optional: On submit, ensure hidden selectedTime is set
+        document.getElementById('bookingForm').addEventListener('submit', (e) => {
+            if (!selectedTime.value) selectedTime.value = timeSlot.value || '';
+        });
+        
+    </script>
+    {% if show_popup %}
+        <style>
+            /* Styling to make it look like a popup */
+            .modal-overlay {
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.5); /* Dimmed background */
+                display: flex; justify-content: center; align-items: center;
+                z-index: 1000;
+            }
+            .modal-box {
+                background: white; padding: 25px; border-radius: 8px; width: 350px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-align: center;
+            }
+            .btn-confirm { background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+            .btn-edit { background: #6c757d; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-left: 10px; }
+        </style>
+        
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <h3>Please Confirm Details</h3>
+                <hr>
+                <p><strong>Name:</strong> {{ data.full_name }}</p>
+                <p><strong>Date:</strong> {{ data.date }}</p>
+                <p><strong>Time:</strong> {{ data.time }}</p>
+        
+                <br>
+                
+                <a href="{% url 'confirm_appointment' %}" class="btn-confirm">Confirm</a>
+        
+                <a href="#" onclick="history.back(); return false;" class="btn-edit">Edit</a>
+            </div>
+        </div>
+    {% endif %}
+{% include 'message_popup.html' %}
+</body>
+</html>
+{% include 'message_popup.html' %}
+</body>
+</html>
+ 
